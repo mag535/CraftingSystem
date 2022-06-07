@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Generator
   - Slot
-  - Item
+  - Hydrogen
+  - Oxygen
   layers:
   - Default
   - TransparentFX

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 355816596604231723}
   - component: {fileID: 355816596604231722}
-  - component: {fileID: 355816596604231716}
-  - component: {fileID: -9038801022615873858}
+  - component: {fileID: 9222679986100633220}
+  - component: {fileID: 6939426717653032780}
   m_Layer: 0
-  m_Name: OxygenGenerator
+  m_Name: GenericGenerator
   m_TagString: Generator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 2023154510, guid: ab54037a8641f1241ab400616e3f81bb, type: 3}
-  m_Color: {r: 0.7773585, g: 0.8625468, b: 1, a: 1}
+  m_Color: {r: 0.5981132, g: 0.9419449, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,22 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &355816596604231716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355816596604231721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe71e2fec7e800048b3d4fcc3ae45c8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: Red Item Generator
-  recipes: []
-  item: {fileID: 8661196345536174217, guid: 9b1249116ab40e44293daa9182b2b962, type: 3}
---- !u!61 &-9038801022615873858
+--- !u!61 &9222679986100633220
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +96,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -127,3 +112,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &6939426717653032780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355816596604231721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe71e2fec7e800048b3d4fcc3ae45c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Generates... something
+  recipes: []
+  item: {fileID: 0}

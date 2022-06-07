@@ -46,16 +46,10 @@ public class Item : MonoBehaviour
             transform.position = mousePosition;
             
         }
-        // if let go, snap to any colliding slots
-        else if (state == 1)
-        {
-            Debug.Log("implement slot snapping");
-        }
         // if let go and not slots collided, delete self
         else if (state == 2)
         {
-            //Debug.Log("implement delete self");
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, 2.0f);
         }
     }
 

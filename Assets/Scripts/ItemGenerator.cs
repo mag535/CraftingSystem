@@ -14,7 +14,7 @@ public class ItemGenerator : MonoBehaviour
     void Start()
     {
         originalScale = transform.localScale;
-        hoverScale = originalScale + new Vector3(0.25f, 0.25f, 0.0f);
+        hoverScale = originalScale + new Vector3(0.5f, 0.5f, 0.0f);
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class ItemGenerator : MonoBehaviour
     void OnMouseOver()
     {
         // enlarge generator
-        transform.localScale= hoverScale;
+        transform.localScale = hoverScale;
     }
 
     // does actions when mouse leaves something
@@ -40,9 +40,16 @@ public class ItemGenerator : MonoBehaviour
     // does actions when mouse button is pressed
     void OnMouseDown()
     {
-        // generate item
-        GameObject obj = GameObject.Instantiate(item,
-                transform.position,
-                Quaternion.identity);
+        if (item == null)
+        {
+            Debug.Log("no item selected to generate.");
+        }
+        else
+        {
+            // generate item
+            GameObject obj = GameObject.Instantiate(item,
+                    transform.position,
+                    Quaternion.identity);
+        }
     }
 }

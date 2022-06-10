@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &335385978556349932
+--- !u!1001 &2843298513275845519
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 355816596604231721, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: m_Name
-      value: HydrogenGenerator Variant
+      value: OxygenGenerator
       objectReference: {fileID: 0}
     - target: {fileID: 355816596604231723, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: m_RootOrder
@@ -17,11 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 355816596604231723, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -12.516618
       objectReference: {fileID: 0}
     - target: {fileID: 355816596604231723, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -6.689749
       objectReference: {fileID: 0}
     - target: {fileID: 355816596604231723, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -58,42 +58,10 @@ PrefabInstance:
     - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 8661196345536174217, guid: 0caaae8cbc2514f4d8f4423093a31743, type: 3}
+      objectReference: {fileID: 8661196345536174217, guid: 9b1249116ab40e44293daa9182b2b962, type: 3}
     - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
       propertyPath: description
-      value: Generates hydrogen atoms
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[0]
-      value: H2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[1]
-      value: H201
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[2]
-      value: H2C1O3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[3]
-      value: C1H4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[4]
-      value: C4H10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[5]
-      value: C6H12O6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6939426717653032780, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}
-      propertyPath: recipes.Array.data[6]
-      value: C12H22O11
+      value: Generates oxygen atoms
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d10341e3187d0854e978ccc207af5d7c, type: 3}

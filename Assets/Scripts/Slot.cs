@@ -31,6 +31,23 @@ public class Slot : MonoBehaviour
             return false;
     }
 
+
+    // get item's name
+    public string getItemName()
+    {
+        if (item == null)
+            return "";
+        else
+            return item.gameObject.tag;
+    }
+
+    // get item quantity
+    public int getItemQuantity()
+    {
+        return itemQuantity;
+    }
+
+
     // calculate time elasped
     public bool timeElapsed(float minimumWait)
     {
@@ -85,7 +102,11 @@ public class Slot : MonoBehaviour
                 // let extra item delete itself
                 Destroy(col.gameObject, 0.5f);
             }
-            // do nothing in all other cases (let item destroy itself)
+            // if trying to stack different types of items
+            else
+            {
+                Destroy(col.gameObject, 0.5f);
+            }
         }
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public string description;
-    public List<string> recipes;
 
     private Vector3 mousePosition;
     private Camera cam;
@@ -22,7 +21,9 @@ public class Item : MonoBehaviour
     {
         state = 0;
         originalScale = transform.localScale;
-        hoverScale = originalScale + new Vector3(0.25f, 0.25f, 0.0f);
+        hoverScale = new Vector3(originalScale.x * 1.5f, 
+            originalScale.y * 1.5f, 
+            0.0f);
         cam = Camera.main;
         mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0.0f;
